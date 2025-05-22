@@ -3,38 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Form</title>
+    <title>Login | WH Veterinary Clinic</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="logo"> 
-        <img src="logotype_wh.png" alt="Company Logo">
+    <div class="login-container card shadow-lg fade-in">
+        <div id="logo"> 
+            <img src="logotype_wh.png" alt="WH Veterinary Clinic">
+        </div>
+        <h2 class="text-center">Welcome Back</h2>
+        
+        <form id="login_form" method="post">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username">
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password">
+            </div>
+            
+            <button type="submit" class="btn btn-primary w-full">Log in</button>
+        </form>
     </div>
-    <h2 id="registration">Login Form</h2>
-    <form id="login_form" method="post">
-        <label for="username">Username</label>
-        <input
-         type="text" 
-         id="username"
-         name="username" 
-         placeholder="Enter your username" 
-         pattern="[A-ЯZa-z]+"
-        title="Username can only consist in latin symbols">
-
-        <label for="username">Password</label>
-        <input 
-        type="password" 
-        id="password" 
-        name="Password" 
-        placeholder="Enter your password" 
-        pattern="[0-9]+" 
-        >
-        <input 
-        type="checkbox" 
-        id="showPassword">Show password<br><br>
-    <input type="submit" value="Log in" onclick="redirectUser(); return false;">     
-    </form>
-    <script defer src="main.js"></script>
+    <script src="main.js" async defer></script>
 </body>
 </html>
