@@ -1,84 +1,96 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Admin Page</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-    <h2>👋 Welcome, Jane Spiegel, Admin 👋</h2>
-      <!--  clinic dashboard-->
-  <section>
-    <h3>🏥 WH Dashboard Overview 🏥</h3>
-    <ul>
-      <li>Total Doctors: 35</li>
-      <li>Total Patients: 52</li>
-      <li>Today's Appointments: 12</li>
-    </ul>
-  </section>
-   <!-- user management -->
-  <section>
-    <h3>💻 User Management 💻</h3>
-    <form>
-      <label for="userRole">Role:</label>
-      <select id="userRole">
-        <option>Doctor</option>
-        <option>Patient</option>
-        <option>Admin</option>
-      </select>
-      <label for="username">Username:</label>
-      <input type="text" id="username" placeholder="Enter username" required>
+<head>
+    <meta charset="utf-8">
+    <title>Admin Portal | WH Veterinary Clinic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h2>Welcome, Jane Spiegel</h2>
+            <p>Administrator Dashboard</p>
+            <p>Last login: Today at 03:10 PM</p>
+        </div>
+    </header>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" placeholder="Enter email" required>
+    <main class="container">
+        <!-- Clinic Stats -->
+        <div class="grid grid-cols-3 gap-4 mb-8">
+            <div class="stats-card card">
+                <h3>35</h3>
+                <p>Total Doctors</p>
+            </div>
+            <div class="stats-card card">
+                <h3>52</h3>
+                <p>Total Patients</p>
+            </div>
+            <div class="stats-card card">
+                <h3>12</h3>
+                <p>Today's Appointments</p>
+            </div>
+        </div>
 
-      <label for="phone">Mobile Phone:</label>
-      <input type="phonw" id="phone" placeholder="Enter mobile phone" required>
+        <!-- User Management -->
+        <section class="card mb-8">
+            <h3 class="section-title">
+                <span>👥</span> User Management
+            </h3>
+            <form>
+                <div class="form-group">
+                    <label for="userRole">Role</label>
+                    <select id="userRole">
+                        <option>Doctor</option>
+                        <option>Patient</option>
+                        <option>Admin</option>
+                    </select>
+                </div>
+                
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="form-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Add User</button>
+            </form>
+        </section>
 
-      <input type="submit" value="Add User">
-    </form>
-  </section>
-  <!-- doctor management -->
-  <section>
-    <h3>🥼 Doctor Management 🥼</h3>
-    <ul>
-      <li>Dr. Smith – 7 appointments today – <button>Edit</button> <button>Remove</button></li>
-      <li>Dr. Ling – 5 appointments today – <button>Edit</button> <button>Remove</button></li>
-    </ul>
-  </section>
-  <!-- patient management -->
-  <section>
-    <h3>🐾 Patient & Pet Records 🐾</h3>
-    <ul>
-      <li>Mickey (🐭) – Owner: Natasha Stan – Last Visit: 12 May – <button>View</button></li>
-      <li>Way (🦔) – Owner: Peter Myers – Last Visit: 2 February – <button>View</button></li>
-      <li>Kiwi (🐰) – Owner: Natalie Robets – Last Visit: 24 May – <button>View</button></li>
-      <li>Milo (🐱) – Owner: Adam Smith – Last Visit: 14 March – <button>View</button></li>
-      <li>Xiao (🐱) – Owner: Lim Jun Lee – Last Visit: 10 January – <button>View</button></li>
-      <li>Alan (🦜) – Owner: Megan Porter – Last Visit: 16 April – <button>View</button></li>
-    </ul>
-  </section>
-   <!-- records -->
-  <section>
-    <h3>🧪 Lab Requests & Medical Records 🧪</h3>
-    <ul>
-      <li>Xiao (🐱) – Blood Test – 10 January – <button>View Result</button></li>
-      <li>Kiwi (🐰) – Dental Treatment – 24 May – <button>View Record</button></li>
-    </ul>
-  </section>
-  <!-- system logs -->
-  <section>
-    <h3>🛠️ System Logs 🛠️</h3>
-    <ul>
-      <li>19 May – Admin added new user: David Miller</li>
-      <li>19 May – Admin edited user David Miller's role: Doctor</li>
-      <li>18 May – Patient Kiwi’s record edited by Dr. Smith</li>
-    </ul>
-  </section>
-        <script src="main.js" async defer></script>
-    </body>
+        <!-- Patient Records -->
+        <section class="card">
+            <h3 class="section-title">
+                <span>🐾</span> Patient Records
+            </h3>
+            <ul class="list">
+                <li class="list-item flex justify-between items-center">
+                    <div>
+                        <p><strong>Kiwi</strong> (🐰 Rabbit)</p>
+                        <p class="text-sm text-light">Owner: Natalie Robets | Last Visit: 24 May</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="btn btn-secondary btn-sm">View</button>
+                        <button class="btn btn-danger btn-sm">Remove</button>
+                    </div>
+                </li>
+                <li class="list-item flex justify-between items-center">
+                    <div>
+                        <p><strong>Milo</strong> (🐱 Cat)</p>
+                        <p class="text-sm text-light">Owner: Adam Smith | Last Visit: 14 March</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <button class="btn btn-secondary btn-sm">View</button>
+                        <button class="btn btn-danger btn-sm">Remove</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <script src="main.js" async defer></script>
+</body>
 </html>
