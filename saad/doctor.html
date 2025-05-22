@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Doctor Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <h2>👋 Welcome, Dr. Smith 👋</h2>
+    <!-- today's appointments -->
+    <section>
+    <h3>📅 Today's Appointments 📅</h3>
+    <ul>
+        <li>10:00 - Kiwi (🐰 Rabbit) – Natalie Robets (👩 Owner) - ✅ Check-up</li>
+        <li>11:30 - Milo (🐱 Cat) - Adam Smith (👱‍♂️ Owner) - 💉 Vaccination</li>
+        <li>13:50 - Alan (🦜 Parrot) - Megan Porter (👩 Owner) - 🦷 Dental Procedures</li>
+     </ul>
+    </section>
+    <!-- medical notes -->
+    <section>
+    <h3>📝 Medical Notes 📝</h3>
+    <textarea placeholder="Write your medical notes here..."></textarea>
+    </section>
+    <!-- prescriptions form -->
+    <form id="prescriptionForm">
+    <h3>💊 New Prescription 💊</h3>
+
+    <label for="petName">Pet's Name:</label>
+    <input type="text" id="petName" name="petName" placeholder="Enter pet's name" required>
+
+    <label for="ownerName">Owner's Name:</label>
+    <input type="text" id="ownerName" name="ownerName" placeholder="Enter owner's name" required>
+
+    <label for="medication">Medication Name:</label>
+    <input type="text" id="medication" name="medication" placeholder="e.g. Cephalexin" required>
+
+    <label for="dosage">Recommended Dosage:</label>
+    <input type="text" id="dosage" name="dosage" placeholder="e.g. 100mg twice a day within a week" required>
+
+    <label for="duration">Recommended Duration:</label>
+    <input type="text" id="duration" name="duration" placeholder="e.g. 10 days" required>
+
+    <label for="instructions">Special Instructions:</label>
+    <textarea id="instructions" name="instructions" rows="4" placeholder="Any special notes"></textarea>
+
+    <input type="submit" value="Submit Prescription">
+    </form>
+    <!-- patient medical history -->
+    <h3>🚑 Patient Medical History 🚑</h3>
+    <div id=select_patient>
+    <select>
+        <option>Select a patient</option>
+        <option>Belle – 🐶 Dog</option>
+        <option>Xiao – 🐱 Cat</option>
+        <option>Kiwi – 🐰 Rabbit</option>
+    </select>
+    <div>
+        <p><strong>Last Visit:</strong> 3 April 2025</p>
+        <p><strong>Diagnosis:</strong> Ringworm</p>
+        <p><strong>Treatment:</strong> Itraconazole and Terbinafine prescribed</p>
+    </div>
+    </div>
+    <!-- diagnosis -->
+    <h3>🩺 New Diagnosis 🩺</h3>
+    <form>
+    <label for="pet">Pet's Name:</label>
+    <input type="text" id="pet" name="pet" required>
+
+    <label for="diagnosis">Diagnosis:</label>
+    <textarea id="diagnosis" name="diagnosis" rows="4" required></textarea>
+
+    <label for="treatment">Treatment Plan:</label>
+    <textarea id="treatment" name="treatment" rows="4" required></textarea>
+
+    <input type="submit" value="Save Record">
+    </form>
+    <!-- lab test request -->
+    <h3>🩻 Lab Test Request 🩻</h3>
+    <form>
+    <label for="testPet">Pet Name:</label>
+    <input type="text" id="testPet" required>
+
+    <label for="testType">Test Type:</label>
+    <select id="testType">
+        <option>Blood Test</option>
+        <option>Urine Analysis</option>
+        <option>X-Ray</option>
+        <option>Ultrasound</option>
+    </select>
+
+    <label for="notes">Notes:</label>
+    <textarea id="notes" rows="3"></textarea>
+
+    <input type="submit" value="Submit Test Request">
+    </form>
+
+        <script src="main.js" async defer></script>
+    </body>
+</html>

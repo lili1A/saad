@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Patient Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <h2>👋 Welcome, Natalie Robets 👋</h2>
+    <!-- pet profile -->
+    <section>
+        <h3>🐾 Pet Profile 🐾 </h3>
+        <p><strong>Name:</strong> Kiwi</p>
+        <p><strong>Species:</strong> Rabbit</p>
+        <p><strong>Breed:</strong> Mini Rex</p>
+        <p><strong>Age:</strong> 4 months</p>
+        <p><strong>Gender:</strong> Male</p>
+    </section>
+     <!-- upcoming appointments -->
+     <section>
+        <h3>📅 Upcoming Appointments 📅</h3>
+        <ul>
+            <li>May 24, 2025 - 11:00 AM - Dr. Smith - Dental Check-up</li>
+        </ul>
+    </section>
+    <!-- medical history -->
+    <section>
+        <h3>📋 Medical History</h3>
+        <ul>
+            <li>March 30, 2025 - Sore eyes - Prescribed antibiotic eye drops and ointment</li>
+            <li>April 4, 2025 - X-ray - No issues detected</li>
+        </ul>
+    </section>
+    <!-- medication prescriptions -->
+    <section>
+        <h3>💊 Medication Prescriptions 💊</h3>
+        <ul>
+            <li>Ofloxacin ophthalmic - 2 drops on each eye twice daily - Issued: March 30, 2025</li>
+            <li>Opticlox Eye Ointment - apply on each eye after using Ofloxacin - Issued: March 30, 2025</li>
+        </ul>
+    </section>
+    <!-- analysis and tests results -->
+    <section>
+        <h3>🧪 Lab Test Results 🧪 </h3>
+        <ul>
+            <li>General Blood Test – March 30, 2025 – No issues detected</li>
+            <li>X-Ray – April 4, 2025 – No fractures</li>
+        </ul>
+    </section>
+    <!-- appointment request form -->
+    <form>
+        <h3>🚑 Request New Appointment 🚑</h3>
+
+        <label for="issue">Issue:</label>
+        <input type="text" id="issue" name="issue" placeholder="e.g., annual check-up" required>
+
+        <label for="requestedDate">Requested Date:</label>
+        <input type="date" id="requestedDate" name="requestedDate" required>
+
+        <label for="requestedTime">Requested Time:</label>
+        <input type="time" id="requestedTime" name="requestedTime" required>
+
+        <input type="submit" value="Request Appointment">
+    </form>
+    <!-- Payment System -->
+    <section>
+        <h3>💳 Pending Payments 💳</h3>
+            <ul>
+                <li>
+                    <strong>Invoice #0012 </strong> – Consultation for Kiwi (🐶) – <strong>RM45.00</strong> <strong>✅ Payed</strong>
+                    <button>View Receipt</button>
+                </li>
+                 <li>
+                    <strong>Invoice #0013</strong> – X-ray for kiwi (🐱) – <strong>$80.00</strong> <strong>⏳ Pending</strong>
+                    <button>Pay Now</button>
+                </li>
+            </ul>
+        </section>
+        <script src="main.js" async defer></script>
+    </body>
+</html>

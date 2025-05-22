@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(188, 196, 196);
+    background: linear-gradient(to right, #dbefff, #e6f6f9);
+    text-decoration: wavy;
+    font-family: 'Roboto', sans-serif;
+    color: #2d2d2d;
+    line-height: 1.6;
+    transition: background 0.5s ease;
+}
+
+#logo {
+    display: block;
+    text-align: center;
+    margin: 40px auto 10px;
+    max-width: 300px;
+}
+
+#logo img {
+    max-width: 250px;
+    height: auto;
+    display: inline-block;
+}
+
+h2 {
+   text-align: center;
+   margin-bottom: 30px;
+   color: #2a5d84;
+} 
+
+
+h3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #3a6ea5;
+}
+
+#form {
+    background-color: rgb(180, 208, 224);
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(122, 120, 133, 0.15);
+    border: none;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+}
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #78bb7a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+input[type="submit"]:hover {
+    background-color: rgb(139, 149, 169);
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    background-color: #f0f7fc;
+    border-left: 4px solid #3a6ea5;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 6px;
+    resize: vertical;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+form input[type="text"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+}
+
+form input[type="submit"] {
+    margin-top: 15px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: none;
+    font-size: 1rem;
+}
+
+div {
+    background-color: #f9fcff;
+    padding: 15px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+section, form {
+    transition:transform 0.2s ease;
+    max-width: 650px;
+    margin:20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #cdd7e9;
+    box-shadow: 0 4px 10px rgba(216, 207, 230, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+section:hover, form:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);  
+}
+
+#select_patient {
+    transition:transform 0.2s ease;
+    max-width: 650px;
+    margin:20px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: #cdd7e9;
+    box-shadow: 0 4px 10px rgba(216, 207, 230, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    border: none;
+}
