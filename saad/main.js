@@ -1,12 +1,3 @@
-// function: show password in the password placeholder 
-function togglePasswordVisibility() {
-    var passwordField = document.getElementById("password");
-    if (passwordField.type === "password") {
-        passwordField.type = "text";
-    } else {
-        passwordField.type = "password";
-    }
-}
 
 // variable: authorized users 
 var authorizedUsers = [
@@ -14,15 +5,6 @@ var authorizedUsers = [
     {username:"Doctor",password:"456"},
     {username:"Client",password:"789"},
 ]
-
-// varaible: show password checkbox 
-var showPasswordCheckbox = document.getElementById("showPassword");
-
-// when checkbox is clicked, show password visibility
-showPasswordCheckbox.addEventListener("change", function() {
-    togglePasswordVisibility();
-});
-
 // fucntion: capitalize fisrt letter in the username
 function capitalizeFirstLetter(str) {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
